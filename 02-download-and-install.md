@@ -22,11 +22,11 @@
 
 实际上，在你看到这篇文章之前，你的电脑中很可能已经安装好了 FFmpeg ，在这种情况下，包管理器会提示已经安装。
 
-## Mac OS X&reg;
+## Mac OS X
 
 *由于作者缺少对此操作系统的了解，所写的信息可能不准确，本节内容或许需要了解它的人对其进行完善和修改。*
 
-在 Mac OS X&reg; 上安装 FFmpeg 有两种方式：第三方包管理器以及手动安装。
+在 Mac OS X 上安装 FFmpeg 有两种方式：第三方包管理器以及手动安装。
 
 ### 第三方包管理器
 
@@ -49,7 +49,7 @@
 
 此时在终端中执行 `ffmpeg` ，如果出来的内容不是 `bash: ffmpeg: command not found` ，就说明安装成功了！
 
-## Microsoft&reg; Windows&reg;
+## Microsoft Windows
 
 首先你需要知道 [你的电脑是 32 位还是 64 位](https://support.microsoft.com/zh-cn/kb/827218)。
 
@@ -66,9 +66,13 @@
 
 ## 手机、平板、树莓派……
 
-虽然理论上 FFmpeg 可以在移动平台运行，但是目前移动端上十分缺乏此类应用。封闭的 iOS 就不提了，在 Android 上有一个[以 FFmpeg 为核心的转码应用](https://play.google.com/store/apps/details?id=com.silentlexx.ffmpeggui)，但是功能严重不全，操作方式也大不相同。
+如果你有一台运行 Android 的手机或平板，你可以安装 [Termux](https://termux.com/) 应用来获得类似 GNU/Linux 的终端操作界面（不用 root ），在安装之后执行以下命令可安装 FFmpeg： 
 
-所以转码工作最好还是在电脑上进行。
+	apt update
+	apt upgrade
+	apt install ffmpeg
+
+但如果你使用的是 iOS 或 Windows Phone 设备，目前则没有办法使用 FFmpeg。
 
 [树莓派](https://zh.wikipedia.org/wiki/%E6%A0%91%E8%8E%93%E6%B4%BE)是一个特殊的存在，它并不是一台如我们想象中一样的 x86 电脑，但是它可以当作一台性能和能耗较低的电脑来使用。它预装的操作系统是 Raspbian ， Debian 的一个衍生版，在它上面的安装请参考上面关于 GNU/Linux 的说明。
 

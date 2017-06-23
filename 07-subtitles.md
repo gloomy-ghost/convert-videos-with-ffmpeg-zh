@@ -12,13 +12,11 @@
 
 ## 作为字幕流
 
-如[第 4 章](04-media-file-structure.md)中所说，媒体文件是由多个 **媒体流** 组成的，我们已经对视频流和音频流很熟悉了，但在这一节，我们将认识另一种媒体流——字幕流。 **字幕流独立于视频流** ，所以它可以随时开关，就像声音可以被静音一样。
+如[媒体文件的结构](04-media-file-structure.md)中所说，媒体文件是由多个 **媒体流** 组成的，我们已经对视频流和音频流很熟悉了，但在这一节，我们将认识另一种媒体流——字幕流。 **字幕流独立于视频流** ，所以它可以随时开关，就像声音可以被静音一样。
 
 字幕流跟其他媒体流一样，有各种编码，常见的编码有 [SubRip](https://en.wikipedia.org/wiki/SubRip) （作为独立文件时后缀名为 `.srt` ）和 [ASS](https://zh.wikipedia.org/wiki/SubStation_Alpha#Advanced_SubStation_Alpha.EF.BC.88ASS.E5.AD.97.E5.B9.95.EF.BC.89) （作为独立文件时后缀名为 `.ass` ）。运行 `ffmpeg -codecs` 可以查看 FFmpeg 支持的所有编码，而其中第 3 列为 `S` 的就是字幕编码。
 
-字幕文件其实也能够算是媒体文件，只不过它不包含视频流和音频流，而是只包含了字幕流。
-
-所以，如果我把只有视频流和音频流的媒体文件 `Tor_Animation_en.mp4` 与只有字幕流的媒体文件 `Tor_animation.zh-CN.srt` 合并到一起，就会得到一个有视频流、音频流和字幕流的媒体文件了。
+字幕文件其实也能够算是媒体文件，只不过它不包含视频流和音频流，而是只包含了字幕流。所以，如果我把只有视频流和音频流的媒体文件 `Tor_Animation_en.mp4` 与只有字幕流的媒体文件 `Tor_animation.zh-CN.srt` 合并到一起，就会得到一个有视频流、音频流和字幕流的媒体文件了。
 
 在 FFmpeg 中，这样做很简单，只要把要合并的两个文件都作为输入文件就可以了，也就是在 `ffmpeg` 后面写上 `-i Tor_Animation_en.mp4 -i Tor_animation.zh-CN.srt` 。 FFmpeg 会将两个输入文件中的媒体流放都到其输出文件中去。
 
@@ -26,7 +24,7 @@
 
 -	 **提示：** 顺带一提， Matroska 和 WebM 封装格式都是支持字幕流的。
 
-在[第 5 章第 4 节](05-start-converting.md#学会看输出)中，我们知道了可以在 FFmpeg 开始转码时查看媒体流的分布（ Stream mapping ），我在执行 `ffmpeg -i Tor_Animation_en.mp4 -i Tor_animation.zh-CN.srt Tor_Animation_subtitled.mkv` 的时候，就会看到这样的输出：
+在[学会看输出](05-start-converting.md#学会看输出)中，我们知道了可以在 FFmpeg 开始转码时查看媒体流的分布（ Stream mapping ），我在执行 `ffmpeg -i Tor_Animation_en.mp4 -i Tor_animation.zh-CN.srt Tor_Animation_subtitled.mkv` 的时候，就会看到这样的输出：
 
 	Stream mapping:
 	  Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
@@ -63,7 +61,7 @@
 
 -	 **提示：** 因为这个操作改写了视频流，所以视频流必须得重新编码。在上面这个例子中，我没有使用 `-c:v` 选项， FFmpeg 则会使用 MP4 封装格式的默认视频编码 `h264` 。
 
--	 **注意：** 如果你使用的是~~遭天谴~~的 Microsoft&reg; Windows&reg; ， FFmpeg 会在写视频流的时候无法找到字体，而导致输出文件中没有任何字幕，要解决这个问题，请参阅[这篇文章](https://github.com/FiveYellowMice/how-to-convert-videos-with-ffmpeg-zh/blob/master/etc/fontconfig-windows/README.md)。
+-	 **注意：** 如果你使用的是~~遭天谴~~的 Microsoft Windows ， FFmpeg 会在写视频流的时候无法找到字体，而导致输出文件中没有任何字幕，要解决这个问题，请参阅[这篇文章](https://github.com/FiveYellowMice/how-to-convert-videos-with-ffmpeg-zh/blob/master/etc/fontconfig-windows/README.md)。
 
 接下来，你就可以享受在视频中看到字幕的便捷了。  
 ![SMPlayer 正在播放带字幕的视频](image/video-with-subtitles.png)

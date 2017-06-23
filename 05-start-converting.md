@@ -12,17 +12,16 @@
 
 -	 **注意：** 如果文件路径包含空格或一些特殊字符，请使用半角引号（ `'` 或 `"` ）将路径名包起来，比如如果文件在 `/home/alex/path with space/` ，执行 `cd "/home/alex/path with space/"` 而 **不是** `cd /home/alex/path with space/` 。
 
--	 **注意：** 如果你使用的是 Microsoft&reg; Windows&reg; ，并且文件不在 C 盘，需要再“执行”一下盘符，比如如果文件存放在 `D:\\Downloads\` 里面，执行以下两条命令：
+-	 **注意：** 如果你使用的是 Microsoft Windows ，并且文件不在 C 盘，需要再“执行”一下盘符，比如如果文件存放在 `D:\\Downloads\` 里面，执行以下两条命令：
 	
 		cd D:\\Downloads\
 		D:
 
-`cd` 完了之后，如果你有强迫症想要检查一下是否真的已经切换到目标目录去了，可以运行 `ls` （ GNU/Linux, Mac OS X&reg; ）或 `dir` （ Microsoft&reg; Windows&reg; ）。只要显示出来的确实是那个目录里的文件，就说明没有问题，你可以放心继续。
+`cd` 完了之后，如果你有强迫症想要检查一下是否真的已经切换到目标目录去了，可以运行 `ls` （ GNU/Linux, Mac OS X ）或 `dir` （ Microsoft Windows ）。只要显示出来的确实是那个目录里的文件，就说明没有问题，你可以放心继续。
 
 ![运行 cd 和 ls](image/cd-ls.png)
 
-接下来输入 `ffmpeg` 但不要回车，我们要使用 `-i` [选项](03-execute.md#选项与参数)来指定输入文件。  
-输入文件是什么？就是我们要转换的文件呀！比如我在此处要转换的文件叫做 `Tor_Animation_en.mp4` ，我就再往命令行中打 `-i Tor_Animation_en.mp4` 。
+接下来输入 `ffmpeg` 但不要回车，我们要使用 `-i` [选项](03-execute.md#选项与参数)来指定输入文件。输入文件就是我们要转换的文件，比如我在此处要转换的文件叫做 `Tor_Animation_en.mp4` ，我就再往命令行中打 `-i Tor_Animation_en.mp4` 。
 
 在指定了输入文件之后，我们还要指定一个输出文件，不然 FFmpeg 把转换出来的文件保存在哪儿呢？  
 输出文件可以是任何名字，但它的后缀名很关键，[上一章](04-media-file-structure.md)已经讲过，后缀名通常就代表着文件的封装格式。在这个例子中，我想将视频转换为 [Matroska](https://zh.wikipedia.org/wiki/Matroska) 格式（俗称 MKV 格式），那么我输出文件的后缀名就得是 `.mkv` 。  
@@ -254,10 +253,6 @@ FFmpeg 确实不会显示进度条和百分比，不过，它会给你比进度�
 
 哦，还不能忘记最后一条很有用的信息， `Press [q] to stop, [?] for help` ，它告诉你在转码的时候按 q 来中断， ? 来查看帮助。有经验的人可能知道用 Ctrl + C 可以中断，不过那个是强制退出，按 q 是相对自然一些的中断。
 
-按 ? 会出来什么呢？感兴趣的话就自己来探索一下吧。
-
->	谁掌握了输出，谁就掌握了程序。
-
 ------------------
 
-读到这里，你应该能使用 FFmpeg 来进行简单的转码了，而这个教程的“入门”阶段也完成了。在[下一章](06-do-in-passing-while-converting.md)，我们将会使 FFmpeg 变得更加有效率和实用。
+读到这里，你应该能使用 FFmpeg 来进行简单的转码了，而这个教程的“入门”阶段也完成了。在[下一章](06-do-in-passing-while-converting.md)，我们将会使 FFmpeg 变得更加有效率和实用。按 ? 会出来什么呢？感兴趣的话就自己来探索一下吧。
