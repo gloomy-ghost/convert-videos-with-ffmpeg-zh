@@ -8,15 +8,8 @@ FFmpeg 并不像它表面看上去那么高端，那么难。只是中文的资�
 
 ## 开始阅读
 
-**为了方便所有人编辑，此计划已经迁移到了[新的 Wiki 页面](https://wiki.fiveyellowmice.com/wiki/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8_FFmpeg_%E8%BF%9B%E8%A1%8C%E8%A7%86%E9%A2%91%E8%BD%AC%E7%A0%81:%E9%A6%96%E9%A1%B5)，在 GitHub 上的内容已废弃，请访问上述链接来阅读。**
-
-1.	~~[在线阅读](index.md)~~  
-	~~这样可以直接用浏览器进行阅读，但可能不是特别方便。~~  
-	~~在线阅读也能够读到最新的内容，因为我不会每做一次修改或增加一些内容就重新制作电子书。~~
-
-2.	~~[下载电子书](https://github.com/FiveYellowMice/how-to-convert-videos-with-ffmpeg-zh/releases/latest)~~  
-	~~这样就可以随时随地阅读了，不过内容可能会[旧一些](https://github.com/FiveYellowMice/how-to-convert-videos-with-ffmpeg-zh/compare/v0.2...master "点此查看电子书与在线阅读的区别")。~~  
-	~~有 HTML ( ZIP 压缩 ), ePUB, PDF, AZW3 这 4 种格式可供下载。~~
+本书作者为 [@FiveYellowMice](https://github.com/FiveYellowMice)，可以在其 [Wiki](https://wiki.fiveyellowmice.com/wiki/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8_FFmpeg_%E8%BF%9B%E8%A1%8C%E8%A7%86%E9%A2%91%E8%BD%AC%E7%A0%81:%E9%A6%96%E9%A1%B5) 上查看最新的版本。
+同时 @gloomy-ghost 维护了一份 [GitBook](https://www.gitbook.com/book/gloomy-ghost/-ffmpeg/details) 镜像，在线阅读的体验会更好一些，甚至可以直接下载电子书以便离线阅读。镜像的更新频率相比 Wiki 会稍有延迟，同时请不要在 GitBook 上建议修改（因为不能保证上游能采纳啊）。
 
 ## 支持
 
