@@ -49,5 +49,8 @@
         * [平均比特率](08-differente-encoders-special-options.md#平均比特率)
         * [稳定画质](08-differente-encoders-special-options.md#稳定画质)
     * [学会看文档](08-differente-encoders-special-options.md#学会看文档)
-* 不仅能转码
+* [不仅能转码](09-not-only-converting.md)
+    * [合并两段视频](09-not-only-converting.md#合并两段视频)
+    * [批量处理](09-not-only-converting.md#批量处理)
+    * [自己动手分配媒体流](09-not-only-converting.md#自己动手分配媒体流)
 * [写在最后](10-write-in-end.md)
