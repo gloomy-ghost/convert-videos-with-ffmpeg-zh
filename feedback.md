@@ -43,7 +43,7 @@ GitHub 提供了一套非常良好的 Issues 系统，用来追踪 bug 之类的
 ## 已经有人反馈了吗？
 
 打开我这个计划的 [GitHub Repository][repo] ，然后点网页右侧的 Issues ，就能进入相应的 Issues 页面了。  
-![右侧面板中的 Issues 按钮](repo-panel.png)
+![右侧面板中的 Issues 按钮](image/repo-panel.png)
 
 如果是手机，往下翻，翻到一个上面写着 Issues 的方框，点 View all issues 。
 
