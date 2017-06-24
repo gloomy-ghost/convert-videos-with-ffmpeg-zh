@@ -9,7 +9,7 @@ FFmpeg 并不像它表面看上去那么高端，那么难。只是中文的资�
 ## 开始阅读
 
 本书作者为 [@FiveYellowMice](https://github.com/FiveYellowMice)，可以在其 [Wiki](https://wiki.fiveyellowmice.com/wiki/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8_FFmpeg_%E8%BF%9B%E8%A1%8C%E8%A7%86%E9%A2%91%E8%BD%AC%E7%A0%81:%E9%A6%96%E9%A1%B5) 上查看最新的版本。
-同时 @gloomy-ghost 维护了一份 [GitBook](https://www.gitbook.com/book/gloomy-ghost/-ffmpeg/details) 镜像，在线阅读的体验会更好一些，甚至可以直接下载电子书以便离线阅读。镜像的更新频率相比 Wiki 会稍有延迟，同时请不要在 GitBook 上建议修改（因为不能保证上游能采纳啊）。
+同时 @gloomy-ghost 维护了一份 [GitBook](https://www.gitbook.com/book/gloomy-ghost/-ffmpeg/details) 镜像，在线阅读的体验会更好一些，还可以直接下载电子书以便离线阅读。镜像的更新频率相比 Wiki 会稍有延迟，除了镜像遗漏的更改之外请不要在 GitBook 上建议修改（因为不能保证上游能采纳啊）。
 
 ## 支持
 
