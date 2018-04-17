@@ -6,9 +6,7 @@
 
 -	Debian, Ubuntu, Linux Mint  
 	
-		apt-get install libav-tools
-	
-	**Debian 及其衍生版用户注意：** 因为一些历史原因， Debian 及其衍生版上是没有一个叫做 `ffmpeg` 的软件包的，取而代之的是 `libav-tools` ，需要执行的命令也是 `avconv` 而不是 `ffmpeg` 。以后将不会重复说明，请将后面的 `ffmpeg` 命令自行脑补成 `avconv` 。
+		apt-get install ffmpeg
 
 -	Fedora, CentOS, RHEL
 	
